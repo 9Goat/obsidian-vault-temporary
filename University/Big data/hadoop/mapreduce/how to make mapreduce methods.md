@@ -11,7 +11,7 @@ class WordCount(MRJob):
                 MRStep(reducer=self.reducer_tri)]
 ```
 
-# zfills
+# zfill
 
 zfill is a command that adds multiple zeros infront of a string number, to make it functional we first need to transform the number into string and then we specify how many zeros we want to add
 
