@@ -1,0 +1,3 @@
+- gather a list of learning tips and methods resources
+- after gathering the list start with one by one
+	- dont just consume as much content at possible, first try to apply the few concepts we learned, once we mastered them then we can catch other content

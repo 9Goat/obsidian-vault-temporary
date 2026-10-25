@@ -1,0 +1,4 @@
+Our brain forgets information quickly if we dont apply what we learn right away or if we dont repeat it ,that is why we should apply those tips:
+
+- **form connections**: our brain is more likely to remember something if it is associated to something we already know,that is why we should look for similarities for new topics we learn to form connection with it and an older topic
+- **grouping**: our brain has a set capacity of numbers of different activities/topics it can remember in the same time that is why we should group tasks and things that are in the same category to make them easier to remember

@@ -1,0 +1,18 @@
+- before starting to learn anything put a decent portion of time for preparation that preparation can be:
+	- collecting all of the materials needed to study [[as many resources]]
+	- creating a study plan and knows what subjects to go into
+	- thinking about how we *should* learn it in the most optimal way
+- when studying we should start with our weakest subjects rather than the strongest
+	- think about it like. if i had an exam tomorrow what subject would i be the most worried about
+- if we can explain something precisely and simply it means we fully understand it
+	- always after each studying session try to explain what you just learnt to know if you understood it or not
+	- follow this technique [[Feynman technique]]
+- to use different methods depending on the subject we are learning for example:
+	- for simple and isolated facts recalling the information is the correct way of studying
+	- for interconnected information studying by using the relationship between the information (mindmap) is the correct way of studying
+- our brain learns new information by scanning for prior knowledge information that is way we use [[reading backwards]] to try to find relevance
+- never be afraid to make changes (choose improvement over comfort) we can do that by **fully** committing to 1 change at a time and see if it works instead of barely trying anything and giving up on it or trying to trying too many new things at the same time which can cause [[cognitive overload and resources]]
+- we should always evaluate our results to get instant feedback by using metricizes that actually matter .How do we know if we choose the correct metric?
+	- ask yourself if it possible for someone else to perform better than me even if he is doing worse according to that metric?
+- we should always be skeptical of what we learn and always try to challenge information that we get, this helps us do proper research and build proper foundation of understanding instead of hollow that only works for grade and not real world use.
+- sometimes reading a large chunk of text might be tiring and overwhelming, that is why we should we the read out loud plugin and follow along it.

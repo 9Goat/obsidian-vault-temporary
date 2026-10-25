@@ -1,0 +1,6 @@
+avoid them as soon as possible:
+
+- **cramming**: Tyring to prepare for an examination by studying intensely for short periods of time. This is often an ineffective and stressful strategy which can lead to :
+	1. bad results trying to study something in a shot period of time will result in poor performance because of lack of training and active [[learning tips]]
+	2. memory loss and poor retention. cramming for an exam will make us remember the information for only a short period of time (no long term memory)
+- **Results are not the end of the world**: It is wrong to measure our understand of something by looking at our exams grades for reasons such as (the exam being easy,the exam didnt question something we were struggling at ,the professor went easy on us....) So the best way to know our understanding of something is by testing ourselves and our understanding by either trying past papers or using ai to test us .This helps us understand our weak areas and try to improve them, every time we get something wrong when testing ourselves we actually learn from it and retain the information better. This also prevents the ' illusion of knowledge' .

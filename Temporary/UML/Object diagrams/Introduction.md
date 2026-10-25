@@ -1,0 +1,1 @@
+the object diagram is used as a way to write a scenario of a class diagram which is useful to showcase the actual instance structure of the system. That is why the follow the same structure and rules of the class diagrams and the only thing  that changes is the title and the values of the attributes.

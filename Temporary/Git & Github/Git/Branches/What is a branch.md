@@ -1,0 +1,2 @@
+a branch is a copy of our last commit meaning we can modify the copy and change it as much as we want without affecting the original codebase, which remains stable and intact. We create branches for tasks that require isolation from the main codebase, such as fixing bugs, implementing new features, or testing experimental changes. and once we are done with the task, we can merge the branch back into the main codebase.
+
