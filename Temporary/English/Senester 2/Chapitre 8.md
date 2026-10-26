@@ -13,7 +13,15 @@ A **probationary period** is a trial period (usually 3 to 6 months) when a new e
 
 A **covering letter** (also called a cover letter) is a one-page document you send _with_ your resume when applying for a job. This is a personal letter written in full sentences. It connects the dots for the employer, explaining _why_ your skills match their specific job and _why_ you want to work there.
 
+## Psychometric test
 
+A standardized test used by employers to evaluate your personality traits, thinking style, and mental aptitude to see if you are a good fit for a job.
+
+## Interview panel
+
+A panel interview is  ==a hiring format where two to five interviewers evaluate a single candidate in one session==.
+
+## work abroad
 # words explanations
 
 ## HeadHunter
