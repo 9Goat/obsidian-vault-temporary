@@ -1074,3 +1074,180 @@ val dialog = builder.create()
 dialog.show()
 ```
 
+# Dump
+
+## DS solution
+
+
+## **1) Classe Matiere**
+
+```kotlin
+class Matiere(
+    val nom: String,
+    val coef: Double,
+    val note: Double
+)
+```
+
+---
+
+## **2) ViewHolder**
+
+**a. Role:** The ViewHolder holds references to the views in each item layout, avoiding repeated `findViewById` calls and improving scrolling performance.
+
+**b. Complete code:**
+```kotlin
+inner class MyViewHolder(val itemview: View) : RecyclerView.ViewHolder(itemview) {
+    var vNom: TextView = itemview.findViewById(R.id.txtMatiere)
+    var vCoef: TextView = itemview.findViewById(R.id.txtCoef)
+    var vNote: TextView = itemview.findViewById(R.id.txtNote)
+}
+```
+
+---
+
+## **3) MainActivity - onCreate**
+
+```kotlin
+override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    setContentView(R.layout.activity_main)
+    
+    values = ArrayList()
+    values.add(Matiere("Développement mobile", 2.0, 14.0))
+    values.add(Matiere("Base de données avancées", 2.0, 12.0))
+    
+    val recyclerview = findViewById<RecyclerView>(R.id.recycler)
+    recyclerview.layoutManager = LinearLayoutManager(this)
+    val adapter = MyAdapter(values)
+    recyclerview.adapter = adapter
+    
+    btCalculer = findViewById(R.id.btnMoyenne)
+    btAjouter = findViewById(R.id.btnAjouter)
+    btCalculer.setOnClickListener { calculerMoy() }
+    btAjouter.setOnClickListener {
+        ajouter()
+        adapter.notifyItemInserted(values.size)
+        Toast.makeText(this, "matière ajoutée", Toast.LENGTH_SHORT).show()
+    }
+}
+```
+
+---
+
+## **4) calculerMoy()**
+
+**a. Complete function:**
+```kotlin
+fun calculerMoy() {
+    var somme: Double = 0.0
+    var somCoef: Double = 0.0
+    var moy: Double = 0.0
+    
+    for (i in 0..values.size - 1) {
+        somme += values[i].note * values[i].coef
+        somCoef += values[i].coef
+    }
+    
+    moy = somme / somCoef
+    
+    val intent = Intent(this, ActivityResultat::class.java)
+    intent.putExtra("moykey", moy)
+    startActivity(intent)
+}
+```
+
+**b. Intent type:** ☑ **Explicite**  
+*Justification: The target Activity class (ActivityResultat::class.java) is explicitly named in the Intent constructor.*
+
+**c. ActivityResultat - Retrieve data:**
+```kotlin
+val intent = intent
+var moyenne = intent.getDoubleExtra("moykey", 0.0)
+```
+
+---
+
+## **5) ajouter()**
+
+```kotlin
+fun ajouter() {
+    varNom = findViewById(R.id.edtNom)
+    varCoef = findViewById(R.id.edtCoef)
+    varNote = findViewById(R.id.edtNote)
+    
+    var n = varNom.text.toString()
+    var c = varCoef.text.toString()
+    var nn = varNote.text.toString()
+    
+    if (n != "" && c != "" && nn != "") {
+        values.add(Matiere(n, parseDouble(c), parseDouble(nn)))
+    } else {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Erreur")
+        builder.setMessage("Données manquantes")
+        builder.setPositiveButton("Ok") { dialog, which ->
+            dialog.cancel()
+        }
+        builder.show()
+    }
+}
+```
+
+---
+
+## **6) MyAdapter**
+
+**a. Class declaration:**
+```kotlin
+class MyAdapter(private val Datas: List<Matiere>) : 
+    RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
+```
+
+**b. onBindViewHolder:**
+```kotlin
+override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+    holder.vNom.text = Datas[position].nom
+    holder.vCoef.text = Datas[position].coef.toString()
+    holder.vNote.text = Datas[position].note.toString()
+}
+```
+
+---
+
+## **7) ligne.xml**
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtMatiere"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtCoef"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtNote"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+```
+
+Snackbar.make(view, "Message", Snackbar.LENGTH_SHORT).show()
