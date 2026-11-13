@@ -18,3 +18,4 @@
 - try to take notes in a well formatted way with many examples and excalidraw drawings (yes making effort in writing notes makes it easier to remmember and understand especially if it is made with illustrations and drawings and examples)
 - to learn something in details i like to use ai projects and feed it with all my resources i have and then ask it to first write a plan/table of content that it has to follow in its explanations and at the end of each explanations it asks me questions to test my understanding o the subject
 - to test if i understand something very well try to explain it to others (inside your head)
+- try to collect resources before learning, also check out my prompt selection for learning an other things

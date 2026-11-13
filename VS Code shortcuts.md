@@ -18,3 +18,5 @@
 - **`CTRL + /`** comments an entire line of all selected text
 - **CTRL + \`  **:** open and closes the terminal
 - **`CTRL + ALT + N`** to run code
+- **`CTRL + W`**: closes the currently selected tab
+- **`CTRL + K  W`** we first start with CTRL + K then we can release them and press W to close **ALL** the tabs
