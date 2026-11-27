@@ -27,3 +27,16 @@ For each resource, include:
 
 At the end, suggest a short recommended learning order using the best resources from the list.
 ```
+
+# Searching for ai tools
+
+```markdown
+i need you to write a list of personalized ai tools (not just generic ai models or chat platforms specialized ai tools is what i want) that offer the following features related to learning from youtube videos only:
+- ai summaries and chatbot about a youtubue video
+- the ability to specify a timestamp and ask questions about it
+- more features like flash cards, notes and other useful things are much appreciated but they are NOT a requirement
+- the tool must be very free tier friendly or preferably completely free
+
+i want you to rank these tools by their features and how free tier friendly they are, for each one of them i want you to write a description about what they are and what their features are
+```
+
